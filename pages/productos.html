@@ -4,80 +4,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../style.css">
     <title>LOS COSA CAFÉ</title>
 </head>
 
 <body class="body_productos">
     <header class="cabecera">
-        <nav class="menu">
-            <div class="imagen_nav">
-                <img src="../multimedia/coffeepot_icon-icons.com_55424.png" alt="">
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <div class="container-xxl">
+              <a class="navbar-brand" href="#"><img  class="bg-white" src="../multimedia/coffeepot_icon-icons.com_55424.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li id="inicio" class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="../index.html">INICIO</a>
+                   
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="nosotros.html">NOSOTROS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="productos.html">PRODUCTOS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="curso_barista.html" tabindex="-1" aria-disabled="true">CURSO BARISTA</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="../index.html#contactanos" tabindex="-1" aria-disabled="true">CONTACTANOS</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <ul>
-               <img src="../multimedia/coffeepot_icon-icons.com_55424.png" alt="">
-               <li><a href="../index.html">INICIO</a></li>
-               <li><a href="nosotros.html">NOSOTROS</a></li>
-               <li><a href="productos.html">PRODUCTOS</a></li>
-               <li><a href="curso_barista.html">CURSO BARISTA</a></li>
-               <li><a href="../index.html#contactanos">CONTACTANOS</a></li>
-            </ul>
-        </nav>
+          </nav>
     </header>
 
-    <section>
+    <div class="texto_productos">
+        <p>Conoce algunos de nuestro productos....<br/>
+            A conntinuacion te mostramos algunas imágenes tomadas de nuestros productos en la tienda,<br/>
+            es para tentarte un poquito, el resto, pasa a conocerlo en vivo..</p>
+    </div>
 
-        <div class="texto_productos">
-            <p>Conoce algunos de nuestro productos....<br/>
-               A conntinuacion te mostramos algunas imágenes tomadas de nuestros productos en la tienda,<br/>
-               es para tentarte un poquito, el resto, pasa a conocerlo en vivo..</p>
-        </div>
+    <section class="galeria_contenedor">
+        
+            <div class="galeria_item">
+                <img class="galeria_imagen" src="../multimedia/torta_frambuesa.png" alt="torta frambuesa">
+                <p>Porción torta frambuesa</p>
+            </div>
+            <div class="galeria_item">
+                <img class="galeria_imagen" src="../multimedia/torta_merengue.png" alt="torta_merengue_vegana">
+                <p>Opción vegana merengue</p>
+            </div>
+            <div class="galeria_item">
+                <img class="galeria_imagen" src="../multimedia/chocotorta_jpg.png" alt="chocotorta">
+                <p>Chocotorta 4 capas</p>
+            </div>
+        
 
-        <section class="galeria">
-            
-                <div>
-                    <img src="../multimedia/torta_frambuesa.png" alt="torta frambuesa">
-                    <p>Porción de torta cremosa frambuesa</p>
-                </div>
-                <div>
-                    <img src="../multimedia/torta_merengue.png" alt="torta_merengue_vegana">
-                    <p>Opción vegana super deliciosa</p>
-                </div>
-                <div>
-                    <img src="../multimedia/chocotorta_jpg.png" alt="chocotorta">
-                    <p>Chocotorta con 4 capas de dulce de leche</p>
-                </div>
-            
+        
+            <div class="galeria_item">
+                <img class="galeria_imagen" src="../multimedia/cafe_ma.png" alt="cafe">
+                <p>Variedades de café y en distintos tamaños</p>
+            </div>
+            <div class="galeria_item">
+                <img class="galeria_imagen" src="../multimedia/masas_finas.png" alt="masas finas">
+                <p>Masitas finas, seleccionadas </p>
+            </div>
+            <div class="galeria_item">
+                <img class="galeria_imagen" src="../multimedia/yogurt.png" alt="yogurt">
+                <p>Yogurt con cereales y frutas</p>
+            </div>
+        
 
-            
-                <div>
-                    <img src="../multimedia/cafe_ma.png" alt="cafe">
-                    <p>Variedades de café y en distintos tamaños</p>
-                </div>
-                <div>
-                    <img src="../multimedia/masas_finas.png" alt="masas finas">
-                    <p>Masitas finas, seleccionadas </p>
-                </div>
-                <div>
-                    <img src="../multimedia/yogurt.png" alt="yogurt">
-                    <p>Yogurt con cereales y frutas de estación</p>
-                </div>
-            
-
-            
-                <div>
-                    <img src="../multimedia/tostado.png" alt="tostado">
-                    <p>Tostado de JyQ con pan de campo</p>
-                </div>
-                <div>
-                    <img src="../multimedia/avocado.png" alt="avocado">
-                    <p>Avocado con palta, huevos, mayonesa casera</p>
-                </div>
-                <div>
-                    <img src="../multimedia/brunch.png" alt="brunch">
-                    <p>Brunch abundante para 2</p>
-                </div>
-            
+        
+            <div class="galeria_item">
+                <img class="galeria_imagen" src="../multimedia/tostado.png" alt="tostado">
+                <p>Tostado de JyQ </p>
+            </div>
+            <div class="galeria_item">
+                <img class="galeria_imagen" src="../multimedia/avocado.png" alt="avocado">
+                <p>Avocado completo</p>
+            </div>
+            <div class="galeria_item">
+                <img class="galeria_imagen" src="../multimedia/brunch.png" alt="brunch">
+                <p>Brunch abundante para 2</p>
             </div>
 
     </section>
@@ -87,5 +99,7 @@
         <h2>LOS COSA CAFÉ, probános... café de especialidad</h2>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </body>
 </html>
