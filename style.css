@@ -18,8 +18,19 @@
 
 /* INDEX.HTML-------------------------------------------------------------------*/
 
-/* Menu navegable-------------------------------------------------------------------
+/* Menu navegable-------------------------------------------------------------------*/
+#nav{
+    display: flex;
+    justify-content:end;  
+}
 
+#nav a:hover{
+    border: 1px solid white;
+    transform: scale(0.9);
+    transition: all 1s ;
+}
+
+/*
 .menu{
     background-color:black;
     display:flex;
@@ -53,6 +64,10 @@ background-color: white;
 
 
 /* Contenedor y nombre cafetería-------------------------------------------------------------------*/
+.menu_principal{
+    display: grid;
+}
+
 
 .contenedor{
     position: relative;
@@ -71,11 +86,16 @@ background-color: white;
 }
 
 .contenedor_nombre{
-    font-size: 38px;
     position: absolute;
     top: 10%;
     color:white; 
 }
+
+.contenedor_nombre h2{
+    font-size: 40px;
+}
+
+/* Mensaje texto de bienvenida a la página-------------------------------------------------------------------*/
 
 .bienvenido{
     text-align: center;
@@ -83,9 +103,6 @@ background-color: white;
     padding-bottom: 180px;
     margin-top: 80px;
 }
-
-
-/* Mensaje texto de bienvenida a la página-------------------------------------------------------------------*/
 
 .bienvenido h1{
     font-size: 40px;
@@ -326,6 +343,7 @@ font-size: 20px;
 
 .ubicacion_mapa iframe{
     width: 95%;
+    margin-top: 4%;
 }
 
 .ubicacion_texto h2{
@@ -520,7 +538,6 @@ background: black;
 
 .galeria_item p{
     position: absolute;
-    bottom: 0;
     color: white;
     font-family: monospace;
     background-color: black;
@@ -582,7 +599,7 @@ background: black;
 }
 
 
-.footer h2{
+.footer p{
     color: white;  
 }
 
