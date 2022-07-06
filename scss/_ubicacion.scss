@@ -1,0 +1,44 @@
+/*Ubicación e iframe mapa-------------------------------------------------------------------*/
+@import 'body';
+@import 'contenedor';
+@import 'menu_navegable';
+@import 'footer';
+
+.ubicacion{
+    margin-top: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(143, 79, 37);
+}
+
+.ubicacion_texto{
+   text-align: center;
+   width: 50%;
+   margin: 2%;
+}
+
+.ubicacion_mapa{
+    margin-left: 50px;
+    width: 50%;
+}
+
+.ubicacion_mapa iframe{
+    width: 95%;
+    margin-top: 4%;
+}
+
+.ubicacion_texto h2{
+    padding-bottom: 10%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.ubicacion_texto img{
+    padding-bottom: 10%;
+}
+
+.ubicacion_texto p{
+    padding-bottom: 10%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}

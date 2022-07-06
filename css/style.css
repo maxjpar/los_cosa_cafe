@@ -1,0 +1,515 @@
+@charset "UTF-8";
+/* CURSO_BARISTA.HTML-------------------------------------------------------------------*/
+
+impo
+.body_barista {
+  background-color: black;
+}
+
+.barista p {
+  background-color: black;
+}
+
+.barista_texto {
+  text-align: center;
+  padding: 20px 0px 80px 0px;
+  color: white;
+  line-height: 150%;
+}
+
+/* Mensaje texto de bienvenida a la página-------------------------------------------------------------------*/
+.bienvenido {
+  text-align: center;
+  padding-top: 180px;
+  padding-bottom: 180px;
+  margin-top: 80px;
+}
+
+.bienvenido h1 {
+  font-size: 40px;
+  font-family: monospace;
+}
+
+.bienvenido p {
+  padding-top: 10px;
+  font-family: monospace;
+  font-size: 18px;
+}
+
+/* Resetear valores-------------------------------------------------------------------*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Aspecto bodies-------------------------------------------------------------------*/
+.body_index {
+  background-color: burlywood;
+}
+
+.body_nosotros, .body_productos, .body_formulario {
+  background-color: black;
+}
+
+/* Bloque de contacto-------------------------------------------------------------------*/
+.contactanos {
+  margin-top: 15%;
+}
+
+.contactanos h2 {
+  text-align: center;
+}
+
+.contactanos_datos {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+}
+
+.contactanos_item {
+  display: grid;
+  justify-items: center;
+  margin: 7%;
+  transition: all 0.3s ease-out;
+}
+
+.contactanos_item p {
+  margin: 10px;
+}
+
+.contactanos_item:hover {
+  transform: scale(1.3);
+}
+
+/* Contenedor y nombre cafetería-------------------------------------------------------------------*/
+.menu_principal {
+  display: grid;
+}
+
+.contenedor {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 100px;
+  width: auto;
+}
+
+.contenedor_img {
+  width: 100%;
+  box-shadow: 5px 8px 12px black;
+  transition: all 2s;
+  object-fit: cover;
+}
+
+.contenedor_nombre {
+  position: absolute;
+  top: 10%;
+  color: white;
+}
+
+.contenedor_nombre h2 {
+  font-size: 40px;
+}
+
+/* FOOTER-------------------------------------------------------------------*/
+.footer {
+  display: flex;
+  width: 100%;
+  height: 30px;
+  background-color: black;
+  justify-content: end;
+}
+
+.footer p {
+  color: white;
+}
+
+.footer img {
+  background-color: white;
+  margin-right: 30px;
+}
+
+/*Formulario-------------------------------------------------------------------*/
+.formulario {
+  margin-top: 15%;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: center;
+  background-color: white;
+}
+
+.formulario p {
+  position: absolute;
+  margin-top: 11%;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.formulario a {
+  border: solid 1px black;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  position: absolute;
+  margin-top: 22%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+}
+
+.formulario img {
+  width: 50%;
+}
+
+.formulario a:hover {
+  font-size: 20px;
+  font-weight: bold;
+  transform: scale(1.1);
+  transition: all 0.7s;
+  background-color: black;
+  color: white;
+}
+
+/* Menu navegable-------------------------------------------------------------------*/
+#nav {
+  display: flex;
+  justify-content: end;
+}
+
+#nav a:hover {
+  border: 1px solid white;
+  transform: scale(0.9);
+  transition: all 1s;
+}
+
+/* Boton a productos.html-------------------------------------------------------------------*/
+.miranos {
+  display: flex;
+  justify-content: center;
+  margin: 30px 50px 50px 50px;
+}
+
+.miranos a {
+  border: solid 2px black;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  background-color: black;
+  transition: all 0.7s;
+}
+
+.miranos a:hover {
+  transform: scale(1.2);
+  color: black;
+  background-color: white;
+}
+
+/* NOSOTROS.HTML-------------------------------------------------------------------*/
+.nosotros p {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  margin-top: 0px;
+  font-size: large;
+  line-height: 300%;
+}
+
+.nosotros h2 {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding-bottom: 150px;
+}
+
+.nosotros img {
+  width: 100%;
+  height: auto;
+}
+
+/* PRODUCTOS.HTML-------------------------------------------------------------------*/
+.texto_productos {
+  text-align: center;
+  color: white;
+  margin: 80px;
+}
+
+.galeria_contenedor {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 150px;
+  gap: 40px;
+  padding: 20px;
+  margin-bottom: 7%;
+}
+
+.galeria_item {
+  position: relative;
+}
+
+.galeria_item p {
+  position: absolute;
+  color: white;
+  font-family: monospace;
+  background-color: black;
+  width: 100%;
+  text-align: center;
+  border: 1px solid white;
+}
+
+.galeria_imagen {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.galeria_item:nth-child(4) {
+  grid-column-start: span 2;
+}
+
+.galeria_item:nth-child(5) {
+  grid-row-start: span 2;
+}
+
+.galeria_item:nth-child(9) {
+  grid-column-start: span 2;
+}
+
+.galeria img:hover {
+  filter: saturate(200%);
+}
+
+/*Ubicación e iframe mapa-------------------------------------------------------------------*/
+.ubicacion {
+  margin-top: 15%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgb(143, 79, 37);
+}
+
+.ubicacion_texto {
+  text-align: center;
+  width: 50%;
+  margin: 2%;
+}
+
+.ubicacion_mapa {
+  margin-left: 50px;
+  width: 50%;
+}
+
+.ubicacion_mapa iframe {
+  width: 95%;
+  margin-top: 4%;
+}
+
+.ubicacion_texto h2 {
+  padding-bottom: 10%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.ubicacion_texto img {
+  padding-bottom: 10%;
+}
+
+.ubicacion_texto p {
+  padding-bottom: 10%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+}
+
+/*Virtudes-------------------------------------------------------------------*/
+.virtudes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  place-items: center;
+}
+
+.virtudes_item {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+}
+
+.virtudes_titulo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+  margin-top: 15%;
+  font-size: 20px;
+}
+
+.virtudes_item h2 {
+  margin: 15px;
+}
+
+/*Visitanos-------------------------------------------------------------------*/
+.visitanos {
+  margin-top: 12%;
+}
+
+.visitanos_texto {
+  text-align: center;
+}
+
+.visitanos_texto h2 {
+  padding-bottom: 4%;
+}
+
+.visitanos_texto p {
+  padding-bottom: 4%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.visitanos_imagen {
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+}
+
+.visitanos_imagen img {
+  width: 70%;
+}
+
+.visitanos_imagen img:hover {
+  filter: saturate(200%);
+}
+
+/* Sección productos-------------------------------------------------------------------*/
+.productos_total {
+  display: grid;
+  background-color: rgb(94, 51, 22);
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.titulo_producto {
+  width: 170px;
+  padding: 10px 0px 10px 0px;
+  display: flex;
+  margin: auto;
+  margin-bottom: 50px;
+  font-size: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+}
+
+.titulo_producto p {
+  margin: auto;
+  padding: 0px 15px 0px 15px;
+  color: white;
+  background-color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.productos {
+  display: flex;
+  flex-direction: row;
+}
+
+.izquierda {
+  width: 50%;
+}
+
+.derecha {
+  width: 50%;
+}
+
+.productos_postres {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.productos_postres p {
+  position: absolute;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  color: white;
+  background-color: black;
+  text-align: center;
+  width: 100%;
+}
+
+.productos_postres img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.productos_capsulas {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.productos_capsulas img {
+  width: 100%;
+}
+
+.par {
+  position: absolute;
+  top: 0%;
+}
+
+.productos_capsulas p {
+  position: absolute;
+  display: block;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  color: white;
+  background-color: black;
+  width: 100%;
+  text-align: center;
+}
+
+.productos_imagen {
+  display: flex;
+  justify-content: space-evenly;
+  object-fit: cover;
+}
+
+.productos_imagen1 {
+  width: 50%;
+  object-fit: cover;
+}
+
+.productos_imagen2 {
+  width: 50%;
+  object-fit: cover;
+}
+
+/* Boton volver al inicio de la página-------------------------------------------------------------------*/
+.volver {
+  display: flex;
+}
+
+.volver a {
+  padding-top: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.volver a:hover {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=style.css.map */

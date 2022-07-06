@@ -452,6 +452,7 @@ width:50%;
     color: black;
 }
 
+
 .volver a:hover{
     font-size: 18px;
     font-weight: bold;
@@ -483,11 +484,26 @@ width:50%;
     height: auto;
 }
 
-
 /* CURSO_BARISTA.HTML-------------------------------------------------------------------*/
 
+.body_barista{
+    background-color: black;
+}
+.barista p{
+    background-color: black;
+}
+
+.barista_texto{
+    text-align: center;
+    padding: 20px 0px 80px 0px;
+    color: white;
+    line-height: 150%
+}
+
+/*
 .barista{
 background: black;
+
 }
 
 .barista h2{
@@ -509,9 +525,9 @@ background: black;
 }
 
 .barista img{
-    width: 100%;
+    width: 70%;
 }
-
+*/
 
 /* PRODUCTOS.HTML-------------------------------------------------------------------*/
 
@@ -529,7 +545,7 @@ background: black;
     grid-auto-rows: 150px ;
     gap: 40px;
     padding: 20px;
-    
+    margin-bottom: 7%;
 }
 
 .galeria_item{

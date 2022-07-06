@@ -1,0 +1,15 @@
+/* Menu navegable-------------------------------------------------------------------*/
+@import 'body';
+@import 'contenedor';
+@import 'footer';
+
+#nav{
+    display: flex;
+    justify-content:end;  
+}
+
+#nav a:hover{
+    border: 1px solid white;
+    transform: scale(0.9);
+    transition: all 1s ;
+}
