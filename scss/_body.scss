@@ -1,0 +1,21 @@
+/* Resetear valores-------------------------------------------------------------------*/
+
+@import 'contenedor';
+@import 'menu_navegable';
+@import 'footer';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* Aspecto bodies-------------------------------------------------------------------*/
+
+.body_index{
+    background-color: burlywood;
+}
+.body_nosotros, .body_productos, .body_formulario{
+    background-color: black;
+}

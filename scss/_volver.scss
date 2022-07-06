@@ -1,0 +1,21 @@
+/* Boton volver al inicio de la página-------------------------------------------------------------------*/
+@import 'body';
+@import 'contenedor';
+@import 'menu_navegable';
+@import 'footer';
+
+.volver{
+    display: flex;
+}
+
+.volver a{
+    padding-top: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+
+.volver a:hover{
+    font-size: 18px;
+    font-weight: bold;
+}
