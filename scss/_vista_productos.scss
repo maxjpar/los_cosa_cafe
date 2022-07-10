@@ -1,8 +1,4 @@
 /* Sección productos-------------------------------------------------------------------*/
-@import 'body';
-@import 'contenedor';
-@import 'menu_navegable';
-@import 'footer';
 
 .productos_total{
     display: grid;
@@ -84,6 +80,10 @@
 .par{
     position: absolute;
     top:0%; 
+}
+
+.capsu{
+    top:95%;
 }
 
 .productos_capsulas p{
