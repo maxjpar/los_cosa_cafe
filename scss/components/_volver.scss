@@ -3,14 +3,13 @@
 
 .volver{
     display: flex;
-}
 
-.volver a{
-    padding-top: 10px;
-    text-decoration: none;
-    color: black;
+    .volver_texto{
+        padding-top: 10px;
+        text-decoration: none;
+        color: black;
+    }
 }
-
 
 .volver a:hover{
     font-size: 18px;

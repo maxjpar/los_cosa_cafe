@@ -1,0 +1,39 @@
+/* Bloque de contacto-------------------------------------------------------------------*/
+
+
+
+.contactanos{
+    margin-top: 15%;
+
+    #contactanos_titulo{
+        text-align: center;
+    }
+    
+    .contactanos_datos{
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+
+        .contactanos_item{
+            display: grid;
+            justify-items: center;
+            margin: 7%;
+            transition: all 0.3s ease-out;
+
+            .contactanos_parrafo{
+                margin: 10px;
+            }
+           
+        }
+        .contactanos_item:hover{
+            transform: scale(1.3);
+        }
+    }
+}  
+
+ 
+
+
+
+

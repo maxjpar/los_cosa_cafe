@@ -1,0 +1,36 @@
+/* Contenedor y nombre cafetería-------------------------------------------------------------------*/
+
+.menu_principal{
+    display: grid;
+
+    .contenedor{
+        position: relative;
+        display: flex;
+        flex-direction:row;
+        justify-content: center; 
+        margin-top: 100px;
+        width: auto; 
+        
+        .contenedor_img{
+            width: 100%;
+            box-shadow: 5px 8px 12px black;
+            transition: all 2s;
+            object-fit: cover;
+        }
+        
+        .contenedor_nombre{
+            position: absolute;
+            top: 10%;
+            color:white; 
+        }
+    }
+}
+
+
+
+
+
+
+.contenedor_nombre h2{
+    font-size: 40px;
+}
