@@ -1,20 +1,19 @@
 /* Mensaje texto de bienvenida a la página-------------------------------------------------------------------*/
 
-
 .bienvenido{
     text-align: center;
     padding-top: 180px;
     padding-bottom: 180px;
     margin-top: 80px;
-}
 
-.bienvenido h1{
-    font-size: 40px;
-   font-family: monospace;
-}
+    .bienvenido_titulo{
+        font-size: 40px;
+       font-family: monospace;
+    }
 
-.bienvenido p{
-    padding-top: 10px;
-    font-family: monospace;
-    font-size: 18px;
+    .bienvenido_parrafo{
+        padding-top: 10px;
+        font-family: monospace;
+        font-size: 18px;
+    }
 }

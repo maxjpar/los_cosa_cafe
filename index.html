@@ -33,7 +33,7 @@
                     <a class="nav-link text-white" href="pages/curso_barista.html" tabindex="-1" aria-disabled="true">CURSO BARISTA</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white" href="#contactanos" tabindex="-1" aria-disabled="true">CONTACTANOS</a>
+                    <a class="nav-link text-white" href="#contactanos_titulo" tabindex="-1" aria-disabled="true">CONTACTANOS</a>
                   </li>
                 </ul>
               </div>
@@ -50,8 +50,8 @@
         </section>
 
         <section class="bienvenido">
-            <h1>¡   BIENVENIDOS A LOS COSA   !</h1>
-            <p>Por que... ¿Cuándo no es un buen momento para tomar un café?</p>
+            <h1 class="bienvenido_titulo">¡   BIENVENIDOS A LOS COSA   !</h1>
+            <p class= "bienvenido_parrafo">Por que... ¿Cuándo no es un buen momento para tomar un café?</p>
             
         </section>
 
@@ -63,15 +63,15 @@
             <section class="productos">
                 <div class="izquierda">
                     <div class="productos_postres">
-                        <p>Cafés, tortas, postres</p>
-                        <img src="multimedia/pie.png" alt="imagen torta y café"> 
+                        <p class="productos_texto">Cafés, tortas, postres</p>
+                        <img class="imagen_cafe" src="multimedia/pie.png" alt="imagen torta y café"> 
                     </div>
                 </div>
                 <div class="derecha">
                     <div class="productos_capsulas">
-                        <p class="par">El mejor café, ahora en cápsulas...</p>
-                        <img src="multimedia/capsulas2.png" alt="capsulas">
-                        <p class="capsu"> 
+                        <p class="productos_cap par">El mejor café, ahora en cápsulas...</p>
+                        <img class="imagen_capsula" src="multimedia/capsulas2.png" alt="capsulas">
+                        <p class="productos_cap capsu"> 
                         ...compatible con sistema Nespresso.</p>
                     </div>   
                     <div class="productos_imagen">
@@ -81,37 +81,38 @@
                 </div>
             </section>
             <div class="miranos">
-                <a href="pages/productos.html" class="button"> Galería imágenes</a>
+                <a class="miranos_link" href="pages/productos.html" class="button"> Galería imágenes</a>
             </div>
         </section>
 
         <section>
             <div class="visitanos">
-                <div class="visitanos_texto">
-                    <h2>¡VISITANOS!</h2>
-                    <p> Creamos un espacio confortable,
+                <div class="visitanos_ver">
+                    <h2 class="visitanos_titulo">¡VISITANOS!</h2>
+                    <p class="visitanos_texto"> Creamos un espacio confortable,
                         luminoso y cómodo
                         en el que queremos que tengas
                         ganas de volver muchas veces!!</p>
                 </div>
-                <div class="visitanos_imagen">
-                    <img src="multimedia/img_local.jpg" alt="foto local">
+                <div class="visitanos_local">
+                    <img class="visitanos_imagen" src="multimedia/img_local.jpg" alt="foto local">
                 </div>
+            </div>
         </section>
         <section>
             <div class="ubicacion">
-                <div class="ubicacion_texto">
-                    <h2>¿DÓNDE ESTAMOS UBICADOS?</h2>
-                    <img src="multimedia/locate_gps_navigation_pin_point_location_icon-icons.com_59906.png" alt="imagen mapa">
-                    <p>Nuestro local se encuentra ubicado en<br />
+                <div class="ubicacion_izquierda">
+                    <h2 class="ubicacion_donde">¿DÓNDE ESTAMOS UBICADOS?</h2>
+                    <img class="ubicacion_imagen" src="multimedia/locate_gps_navigation_pin_point_location_icon-icons.com_59906.png" alt="imagen mapa">
+                    <p class="ubicacion_texto">Nuestro local se encuentra ubicado en<br />
                     Fray Justo Sta. María de Oro 2494, <br />
                     a pocos metros de la famosa<br />
                     PLAZA ITALIA,en PALERMO, caba.<br />
                     Lunes a viernes de 8 a 20 hs,<br />
                     sábados  de 8 a 22 hs, domingos de 8 a 20.</p>
                 </div>
-                <div class="ubicacion_mapa">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.978182403867!2d-58.4292075767055!3d-34.57941860122091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb59b36f99ff9%3A0xae116410557d348b!2sFray%20Justo%20Sta.%20Mar%C3%ADa%20de%20Oro%202494%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1653536217855!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="ubicacion_derecha">
+                    <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.978182403867!2d-58.4292075767055!3d-34.57941860122091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb59b36f99ff9%3A0xae116410557d348b!2sFray%20Justo%20Sta.%20Mar%C3%ADa%20de%20Oro%202494%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1653536217855!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </section>
@@ -151,40 +152,40 @@
 
         <section>
             <div class="formulario">
-                <img src="multimedia/img_formulario.jpg" alt="">
-                <p>Completá nuestro formulario <br /> y 
+                <img class="formulario_imagen"src="multimedia/img_formulario.jpg" alt="">
+                <p class="formulario_texto">Completá nuestro formulario <br /> y 
                     contanos tu experiencia,<br /> 
                     ¡ayudanos a mejorar!</p>
                 <form action=""></form>
-                <a href="pages/formulario.html" class="button">Ir</a>
+                <a class="formulario_ir" href="pages/formulario.html" class="button">Ir</a>
             </div>
         </section>
 
         <section class="contactanos">
-            <h2 id = "contactanos">¡CONTÁCTANOS!</h2>
+            <h2 id = "contactanos_titulo">¡CONTÁCTANOS!</h2>
             <div class="contactanos_datos" >
                 <div class="contactanos_item">
                     <img src="multimedia/phone-symbol_icon-icons.com_56475.png" alt="imagen telefono">
-                    <p>+549 1160222051</p>
+                    <p class="contactanos_parrafo">+549 1160222051</p>
                 </div>
                 <div class="contactanos_item">
                     <a href="enlace_a_nuevo_mail"><img src="multimedia/arroba_40527.png" alt="imagen arroba"></a>
-                    <p>loscosacafe@gmail.com</p>
+                    <p class="contactanos_parrafo">loscosacafe@gmail.com</p>
                 </div>
                 <div class="contactanos_item">
                     <a href="enlace_a_charla_whatsapp"><img src="multimedia/whats.jpg.PNG" alt="imagen whatsapp"></a>
-                    <p>1160222051</p>
+                    <p class="contactanos_parrafo">1160222051</p>
                 </div>
                 <div class="contactanos_item">
                     <a href="enlace_a_instragram"><img src="multimedia/3721672-instagram_108066.png" alt="imagen instagram"></a>
-                    <p>instagram.com/loscosacafe</p>
+                    <p class="contactanos_parrafo">instagram.com/loscosacafe</p>
                 </div>
             </div>
         </section>
 
         <div class="volver">
-            <a href="#inicio"><img src="multimedia/arrowupwardoutline_110784.png" alt=""></a>
-            <a href="#inicio">volver al inicio</a>
+            <a class="volver_imagen"href="#inicio"><img src="multimedia/arrowupwardoutline_110784.png" alt=""></a>
+            <a class="volver_texto"href="#inicio">volver al inicio</a>
         </div>
 
     </main>

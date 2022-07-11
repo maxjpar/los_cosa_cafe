@@ -19,8 +19,7 @@
 .menu_principal {
   display: grid;
 }
-
-.contenedor {
+.menu_principal .contenedor {
   position: relative;
   display: flex;
   flex-direction: row;
@@ -28,15 +27,13 @@
   margin-top: 100px;
   width: auto;
 }
-
-.contenedor_img {
+.menu_principal .contenedor .contenedor_img {
   width: 100%;
   box-shadow: 5px 8px 12px black;
   transition: all 2s;
   object-fit: cover;
 }
-
-.contenedor_nombre {
+.menu_principal .contenedor .contenedor_nombre {
   position: absolute;
   top: 10%;
   color: white;
@@ -51,16 +48,15 @@
   display: flex;
   justify-content: end;
 }
+#nav #nav a {
+  font-size: 15px;
+  padding: 15px;
+}
 
 *#nav a:hover {
   border: 1px solid white;
   transform: scale(0.9);
   transition: all 1s;
-}
-
-#nav a {
-  font-size: 15px;
-  padding: 15px;
 }
 
 #nav a.active {
@@ -89,12 +85,7 @@
 .body_barista {
   background-color: black;
 }
-
-.barista p {
-  background-color: black;
-}
-
-.barista_texto {
+.body_barista .barista_texto {
   text-align: center;
   padding: 20px 0px 80px 0px;
   color: white;
@@ -108,13 +99,11 @@
   padding-bottom: 180px;
   margin-top: 80px;
 }
-
-.bienvenido h1 {
+.bienvenido .bienvenido_titulo {
   font-size: 40px;
   font-family: monospace;
 }
-
-.bienvenido p {
+.bienvenido .bienvenido_parrafo {
   padding-top: 10px;
   font-family: monospace;
   font-size: 18px;
@@ -140,30 +129,25 @@
 .contactanos {
   margin-top: 15%;
 }
-
-.contactanos h2 {
+.contactanos #contactanos_titulo {
   text-align: center;
 }
-
-.contactanos_datos {
+.contactanos .contactanos_datos {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
 }
-
-.contactanos_item {
+.contactanos .contactanos_datos .contactanos_item {
   display: grid;
   justify-items: center;
   margin: 7%;
   transition: all 0.3s ease-out;
 }
-
-.contactanos_item p {
+.contactanos .contactanos_datos .contactanos_item .contactanos_parrafo {
   margin: 10px;
 }
-
-.contactanos_item:hover {
+.contactanos .contactanos_datos .contactanos_item:hover {
   transform: scale(1.3);
 }
 
@@ -171,8 +155,7 @@
 .menu_principal {
   display: grid;
 }
-
-.contenedor {
+.menu_principal .contenedor {
   position: relative;
   display: flex;
   flex-direction: row;
@@ -180,15 +163,13 @@
   margin-top: 100px;
   width: auto;
 }
-
-.contenedor_img {
+.menu_principal .contenedor .contenedor_img {
   width: 100%;
   box-shadow: 5px 8px 12px black;
   transition: all 2s;
   object-fit: cover;
 }
-
-.contenedor_nombre {
+.menu_principal .contenedor .contenedor_nombre {
   position: absolute;
   top: 10%;
   color: white;
@@ -207,8 +188,7 @@
   justify-content: center;
   background-color: white;
 }
-
-.formulario p {
+.formulario .formulario_texto {
   position: absolute;
   margin-top: 11%;
   text-align: center;
@@ -216,8 +196,7 @@
   font-size: 15px;
   font-weight: bold;
 }
-
-.formulario a {
+.formulario .formulario_ir {
   border: solid 1px black;
   color: black;
   text-decoration: none;
@@ -227,8 +206,7 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 15px;
 }
-
-.formulario img {
+.formulario .formulario_imagen {
   width: 50%;
 }
 
@@ -246,16 +224,15 @@
   display: flex;
   justify-content: end;
 }
+#nav #nav a {
+  font-size: 15px;
+  padding: 15px;
+}
 
 *#nav a:hover {
   border: 1px solid white;
   transform: scale(0.9);
   transition: all 1s;
-}
-
-#nav a {
-  font-size: 15px;
-  padding: 15px;
 }
 
 #nav a.active {
@@ -269,8 +246,7 @@
   justify-content: center;
   margin: 30px 50px 50px 50px;
 }
-
-.miranos a {
+.miranos .miranos_link {
   border: solid 2px black;
   color: black;
   text-decoration: none;
@@ -289,7 +265,7 @@
 }
 
 /* NOSOTROS.HTML-------------------------------------------------------------------*/
-.nosotros p {
+.nosotros .nosotros_texto {
   text-align: center;
   background-color: black;
   color: white;
@@ -299,15 +275,13 @@
   font-size: large;
   line-height: 300%;
 }
-
-.nosotros h2 {
+.nosotros .nosotros_lema {
   font-size: 20px;
   color: white;
   text-align: center;
   padding-bottom: 150px;
 }
-
-.nosotros img {
+.nosotros .nosotros img {
   width: 100%;
   height: auto;
 }
@@ -327,12 +301,15 @@
   padding: 20px;
   margin-bottom: 7%;
 }
-
-.galeria_item {
+.galeria_contenedor .galeria_item {
   position: relative;
 }
-
-.galeria_item p {
+.galeria_contenedor .galeria_item .galeria_imagen {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.galeria_contenedor .galeria_item .galeria_texto {
   position: absolute;
   color: white;
   font-family: monospace;
@@ -340,12 +317,6 @@
   width: 100%;
   text-align: center;
   border: 1px solid white;
-}
-
-.galeria_imagen {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 .galeria_item:nth-child(4) {
@@ -372,36 +343,30 @@
   justify-content: center;
   background-color: rgb(143, 79, 37);
 }
-
-.ubicacion_texto {
+.ubicacion .ubicacion_izquierda {
   text-align: center;
   width: 50%;
   margin: 2%;
 }
-
-.ubicacion_mapa {
-  margin-left: 50px;
-  width: 50%;
-}
-
-.ubicacion_mapa iframe {
-  width: 95%;
-  margin-top: 4%;
-}
-
-.ubicacion_texto h2 {
+.ubicacion .ubicacion_izquierda .ubicacion_donde {
   padding-bottom: 10%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
-.ubicacion_texto img {
+.ubicacion .ubicacion_izquierda .ubicacion_imagen {
   padding-bottom: 10%;
 }
-
-.ubicacion_texto p {
+.ubicacion .ubicacion_izquierda .ubicacion_texto {
   padding-bottom: 10%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 15px;
+}
+.ubicacion .ubicacion_derecha {
+  margin-left: 50px;
+  width: 50%;
+}
+.ubicacion .ubicacion_derecha .mapa {
+  width: 95%;
+  margin-top: 4%;
 }
 
 /*Virtudes-------------------------------------------------------------------*/
@@ -414,34 +379,27 @@
 }
 
 /*Visitanos-------------------------------------------------------------------*/
-.visitanos {
+.visitanos .visitanos_ver {
   margin-top: 12%;
 }
-
-.visitanos_texto {
+.visitanos .visitanos_ver .visitanos_titulo {
   text-align: center;
-}
-
-.visitanos_texto h2 {
   padding-bottom: 4%;
 }
-
-.visitanos_texto p {
+.visitanos .visitanos_ver .visitanos_texto {
   padding-bottom: 4%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
 }
-
-.visitanos_imagen {
+.visitanos .visitanos_local {
   display: flex;
   justify-content: center;
   margin-top: 3%;
 }
-
-.visitanos_imagen img {
+.visitanos .visitanos_local .visitanos_imagen {
   width: 70%;
 }
-
-.visitanos_imagen img:hover {
+.visitanos .visitanos_imagen:hover {
   filter: saturate(200%);
 }
 
@@ -452,8 +410,7 @@
   padding-top: 40px;
   padding-bottom: 30px;
 }
-
-.titulo_producto {
+.productos_total .titulo_producto {
   width: 170px;
   padding: 10px 0px 10px 0px;
   display: flex;
@@ -463,37 +420,28 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: black;
 }
-
-.titulo_producto p {
+.productos_total .titulo_producto .titulo_producto p {
   margin: auto;
   padding: 0px 15px 0px 15px;
   color: white;
   background-color: black;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
-.productos {
+.productos_total .productos {
   display: flex;
   flex-direction: row;
 }
-
-.izquierda {
+.productos_total .productos .izquierda {
   width: 50%;
 }
-
-.derecha {
-  width: 50%;
-}
-
-.productos_postres {
+.productos_total .productos .izquierda .productos_postres {
   display: flex;
   position: relative;
   justify-content: center;
   flex-wrap: wrap;
   align-content: center;
 }
-
-.productos_postres p {
+.productos_total .productos .izquierda .productos_postres .productos_texto {
   position: absolute;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 15px;
@@ -502,14 +450,15 @@
   text-align: center;
   width: 100%;
 }
-
-.productos_postres img {
+.productos_total .productos .izquierda .productos_postres .imagen_cafe {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
-.productos_capsulas {
+.productos_total .productos .derecha {
+  width: 50%;
+}
+.productos_total .productos .derecha .productos_capsulas {
   display: flex;
   position: relative;
   justify-content: center;
@@ -517,21 +466,17 @@
   flex-wrap: wrap;
   align-content: center;
 }
-
-.productos_capsulas img {
-  width: 100%;
-}
-
-.par {
+.productos_total .productos .derecha .productos_capsulas .par {
   position: absolute;
   top: 0%;
 }
-
-.capsu {
+.productos_total .productos .derecha .productos_capsulas .capsu {
   top: 95%;
 }
-
-.productos_capsulas p {
+.productos_total .productos .derecha .productos_capsulas .imagen_capsula {
+  width: 100%;
+}
+.productos_total .productos .derecha .productos_capsulas .productos_cap {
   position: absolute;
   display: block;
   color: black;
@@ -542,19 +487,16 @@
   width: 100%;
   text-align: center;
 }
-
-.productos_imagen {
+.productos_total .productos .derecha .productos_imagen {
   display: flex;
   justify-content: space-evenly;
   object-fit: cover;
 }
-
-.productos_imagen1 {
+.productos_total .productos .derecha .productos_imagen .productos_imagen1 {
   width: 50%;
   object-fit: cover;
 }
-
-.productos_imagen2 {
+.productos_total .productos .derecha .productos_imagen .productos_imagen2 {
   width: 50%;
   object-fit: cover;
 }
@@ -563,8 +505,7 @@
 .volver {
   display: flex;
 }
-
-.volver a {
+.volver .volver_texto {
   padding-top: 10px;
   text-decoration: none;
   color: black;
