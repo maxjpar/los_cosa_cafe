@@ -2,9 +2,9 @@
 
 .nosotros{
     .nosotros_texto{
-        text-align: center;
+        text-align: map-get($diseño, texto-centrado);
         background-color: black;
-        color: white;
+        color: map-get($diseño, color-secundario);
         padding-top: 50px;
         padding-bottom: 40px ;
         margin-top: 0px;
@@ -14,13 +14,13 @@
     
     .nosotros_lema{
         font-size: 20px;
-        color: white;
-        text-align: center;
+        color: map-get($diseño, color-secundario);
+        text-align: map-get($diseño, texto-centrado);
         padding-bottom: 150px;
     }
     
     .nosotros img{
-        width: 100%;
+        width: $ancho;
         height: auto;
     }
     

@@ -2,18 +2,17 @@
 
 
 .miranos{
-    display: flex;
-    justify-content: center;
+    @include vista(flex, center);
     margin: 30px 50px 50px 50px; 
     
     .miranos_link{
         border: solid 2px black;
         color: black;
         text-decoration: none;
-        text-align: center;
+        text-align: map-get($diseño, texto-centrado);
         padding: 10px; 
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: white;
+        font-family: $letra;
+        color: map-get($diseño, color-secundario);
         background-color:black;
         transition: all 0.7s;
     }
@@ -24,5 +23,5 @@
 .miranos a:hover{
    transform: scale(1.2);
    color: black;
-   background-color: white;
+   background-color: map-get($diseño, color-secundario);
 }

@@ -6,14 +6,14 @@
         margin-top: 12%;
 
         .visitanos_titulo{
-            text-align: center;
+            text-align: map-get($diseño, texto-centrado);
             padding-bottom: 4%;
         }
         
         .visitanos_texto{
             padding-bottom: 4%;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            text-align: center;
+            font-family: $letra;
+            text-align: map-get($diseño, texto-centrado);
         }
     }
 

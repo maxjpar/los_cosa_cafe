@@ -1,7 +1,7 @@
 /* Sección productos-------------------------------------------------------------------*/
 
 .productos_total{
-    display: grid;
+    display: $display-g;
     background-color: rgb(94, 51, 22);
     padding-top: 40px;
     padding-bottom: 30px;
@@ -13,44 +13,42 @@
         margin: auto;
         margin-bottom: 50px;
         font-size: 25px;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-family: $letra;
         color: black; 
 
         .titulo_producto p{
             margin: auto;
             padding: 0px 15px 0px 15px;
-            color: white;
+            color: map-get($diseño, color-secundario);
             background-color:black;
-            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-family: $letra;
         }
     }
 
     .productos{
-        display: flex;
-        flex-direction: row;
+        @extend %flex;
 
         .izquierda{
             width: 50%;
 
             .productos_postres{
-                display: flex;
+                @include vista(flex, center);
                 position: relative;
-                justify-content: center;
                 flex-wrap: wrap;
                 align-content: center;
 
                 .productos_texto{
                     position: absolute;
-                    font-family:Verdana, Geneva, Tahoma, sans-serif;
+                    font-family: $letra;
                     font-size: 15px;
-                    color: white;
+                    color: map-get($diseño, color-secundario);
                     background-color:black;
-                    text-align: center;
-                    width: 100%;
+                    text-align: map-get($diseño, texto-centrado);
+                    width: $ancho;
                 }
 
                 .imagen_cafe{
-                    width: 100%;
+                    width: $ancho;
                     height: 100%;
                     object-fit: cover;
                    
@@ -62,9 +60,8 @@
             width: 50%;
 
             .productos_capsulas{
-                display: flex;
+                @include vista(flex, center);
                 position: relative;
-                justify-content: center;
                 align-items: flex-end;
                 flex-wrap: wrap;
                 align-content: center;
@@ -79,25 +76,24 @@
                 }
 
                 .imagen_capsula{
-                    width: 100%;
+                    width: $ancho;
                 }
 
                 .productos_cap{
                     position: absolute;
                     display: block;
                     color: black;
-                    font-family:Verdana, Geneva, Tahoma, sans-serif;
+                    font-family: $letra;
                     font-size: 15px;
-                    color: white;
+                    color: map-get($diseño, color-secundario);
                     background-color:black;
-                    width: 100%;
-                    text-align: center;
+                    width: $ancho;
+                    text-align: map-get($diseño, texto-centrado);
                 }
             }
 
             .productos_imagen{
-                display: flex;
-               justify-content:space-evenly;
+                @include vista(flex, space-evenly);
                object-fit: cover;
 
                .productos_imagen1{

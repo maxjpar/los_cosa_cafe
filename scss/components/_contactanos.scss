@@ -6,17 +6,17 @@
     margin-top: 15%;
 
     #contactanos_titulo{
-        text-align: center;
+        text-align: map-get($diseño, texto-centrado);
     }
     
     .contactanos_datos{
-        display: grid;
+        display: $display-g;
         grid-template-rows: repeat(2, 1fr);
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
 
         .contactanos_item{
-            display: grid;
+            display: $display-g;
             justify-items: center;
             margin: 7%;
             transition: all 0.3s ease-out;

@@ -1,16 +1,11 @@
 /* CURSO_BARISTA.HTML-------------------------------------------------------------------*/
-  @import 'body';
-  @import 'contenedor';
-  @import 'menu_navegable';
-  @import 'footer';
-
 .body_barista{
     background-color: black;
     
     .barista_texto{
-        text-align: center;
+        text-align: map-get($diseño, texto-centrado);
         padding: 20px 0px 80px 0px;
-        color: white;
+        color: map-get($diseño, color-secundario);
         line-height: 150%
     }
 }
