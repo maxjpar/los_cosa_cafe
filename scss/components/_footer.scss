@@ -2,19 +2,19 @@
 
 
 .footer{
-    display: flex;
-    width: 100%;
+    @include vista(flex,end);
+    width: $ancho;
     height: 30px;
     background-color:black;
-    justify-content: end;
+    
 }
 
 
 .footer p{
-    color: white;  
+    color: map-get($diseño, color-secundario);  
 }
 
 .footer img{
-    background-color: white;
+    background-color: map-get($diseño, color-secundario);
     margin-right: 30px; 
 }

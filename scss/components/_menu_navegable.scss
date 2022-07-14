@@ -1,8 +1,8 @@
 /* Menu navegable-------------------------------------------------------------------*/
 
 #nav{
-    display: flex;
-    justify-content:end;
+    @include vista(flex, end);
+    
     
     #nav a{
         font-size: 15px;
@@ -11,12 +11,12 @@
 }
 
 *#nav a:hover{
-    border: 1px solid white;
+    border: 1px solid map-get($diseño, color-secundario);
     transform: scale(0.9);
     transition: all 1s ;
 }
 
 #nav a.active{
-    border: 1px solid white;
+    border: 1px solid map-get($diseño, color-secundario);
     transition: all 1s ;
 }

@@ -1,18 +1,17 @@
 /* Contenedor y nombre cafetería-------------------------------------------------------------------*/
-
 .menu_principal{
-    display: grid;
+    display: $display-g;
 
     .contenedor{
         position: relative;
-        display: flex;
-        flex-direction:row;
         justify-content: center; 
         margin-top: 100px;
         width: auto; 
+        @extend %flex;
+        
         
         .contenedor_img{
-            width: 100%;
+            width: $ancho;
             box-shadow: 5px 8px 12px black;
             transition: all 2s;
             object-fit: cover;
@@ -21,7 +20,7 @@
         .contenedor_nombre{
             position: absolute;
             top: 10%;
-            color:white; 
+            color: map-get($diseño, color-secundario); 
         }
     }
 }

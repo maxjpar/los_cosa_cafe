@@ -1,13 +1,13 @@
 /* PRODUCTOS.HTML-------------------------------------------------------------------*/
 
 .texto_productos{
-    text-align: center;
-    color: white;
+    text-align: map-get($diseño, texto-centrado);
+    color: map-get($diseño, color-secundario);
     margin: 80px;
 }
 
 .galeria_contenedor{
-    display: grid;
+    display: $display-g;
     grid-template-columns: repeat(3, 1fr) ;
     grid-auto-rows: 150px ;
     gap: 40px;
@@ -18,18 +18,18 @@
         position: relative;
         
         .galeria_imagen{
-            width: 100%;
+            width: $ancho;
             height: 100%;
             object-fit: cover;
         }
         .galeria_texto{
             position: absolute;
-            color: white;
-            font-family: monospace;
+            color: map-get($diseño, color-secundario);
+            font-family: $letra;
             background-color: black;
-            width: 100%;
-            text-align: center;
-            border: 1px solid white;
+            width: $ancho;
+            text-align: map-get($diseño, texto-centrado);
+            border: 1px solid map-get($diseño, color-secundario);
         }
 
     }

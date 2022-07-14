@@ -3,20 +3,19 @@
 
 .ubicacion{
     margin-top: 15%;
-    display: flex;
-    flex-direction: row;
+    @extend %flex;
     justify-content: center;
     background-color: rgb(143, 79, 37);
 
 
     .ubicacion_izquierda{
-    text-align: center;
+    text-align: map-get($diseño, texto-centrado);
     width: 50%;
     margin: 2%;
 
         .ubicacion_donde{
             padding-bottom: 10%;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-family: $letra;
         }
         
         .ubicacion_imagen{
@@ -25,7 +24,7 @@
         
         .ubicacion_texto{
             padding-bottom: 10%;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-family: $letra;
             font-size: 15px;
         }
     }

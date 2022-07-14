@@ -2,18 +2,17 @@
 
 .formulario{
     margin-top: 15%;
-    display: flex;
-    flex-direction: row;
+    @extend %flex;
     position: relative;
     justify-content: center;
-    background-color: white;
+    background-color: map-get($diseño, color-secundario);
 
     
     .formulario_texto{
         position:absolute;
         margin-top: 11%;
-        text-align: center;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: map-get($diseño, texto-centrado);
+        font-family: $letra;
         font-size: 15px;
         font-weight: bold;
     }
@@ -22,10 +21,10 @@
         border: solid 1px black;
         color: black;
         text-decoration: none;
-        text-align: center;
+        text-align: map-get($diseño, texto-centrado);
         position:absolute;
         margin-top: 22%;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-family: $letra;
         font-size: 15px;
     }
 
@@ -40,5 +39,5 @@
     transform: scale(1.1);
     transition: all 0.7s;
     background-color: black;
-    color: white;
+    color: map-get($diseño, color-secundario);
 }
