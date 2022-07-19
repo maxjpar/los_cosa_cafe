@@ -48,6 +48,10 @@
   background-color: black;
 }
 
+.disclaimer {
+  display: none;
+}
+
 /* Bloque de contacto-------------------------------------------------------------------*/
 .contactanos {
   margin-top: 15%;
