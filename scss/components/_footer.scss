@@ -2,19 +2,22 @@
 
 
 .footer{
-    @include vista(flex,end);
-    width: $ancho;
-    height: 30px;
+    display: flex;
+    justify-content: end;
+    
     background-color:black;
+    padding-top: 10px;
+    
+
+    .img_footer{
+        background-color: map-get($diseño, color-secundario);
+        margin-right: 30px; 
+    }
+
+    .frase_footer{
+        color: map-get($diseño, color-secundario);  
+    }
     
 }
 
 
-.footer p{
-    color: map-get($diseño, color-secundario);  
-}
-
-.footer img{
-    background-color: map-get($diseño, color-secundario);
-    margin-right: 30px; 
-}

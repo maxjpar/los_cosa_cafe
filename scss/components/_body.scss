@@ -11,7 +11,19 @@
 
 .body_index{
     background-color: burlywood;
+    
 }
 .body_nosotros, .body_productos, .body_formulario{
     background-color: black;
+    
 }
+
+/*@media screen and (max-width: 768px){
+    .body_nosotros, .body_productos, .body_formulario{
+    background-color: yellow;
+    }
+}*/
+
+.disclaimer{
+display: none;
+} 

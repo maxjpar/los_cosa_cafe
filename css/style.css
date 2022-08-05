@@ -48,6 +48,15 @@
   background-color: black;
 }
 
+/*@media screen and (max-width: 768px){
+    .body_nosotros, .body_productos, .body_formulario{
+    background-color: yellow;
+    }
+}*/
+.disclaimer {
+  display: none;
+}
+
 /* Bloque de contacto-------------------------------------------------------------------*/
 .contactanos {
   margin-top: 15%;
@@ -136,6 +145,49 @@
   transition: all 0.7s;
   background-color: black;
   color: white;
+}
+
+/* FOOTER-------------------------------------------------------------------*/
+.footer {
+  display: flex;
+  justify-content: end;
+  background-color: black;
+  padding-top: 10px;
+}
+.footer .img_footer {
+  background-color: white;
+  margin-right: 30px;
+}
+.footer .frase_footer {
+  color: white;
+}
+
+.texto_f {
+  margin: 5%;
+  text-align: center;
+}
+.texto_f .contenido_f {
+  color: white;
+}
+
+.completar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7%;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.completar .campo {
+  color: white;
+}
+.completar .item_imput {
+  width: 50%;
+}
+.completar .boton_enviar_form {
+  margin-top: 5%;
 }
 
 /* Menu navegable-------------------------------------------------------------------*/
