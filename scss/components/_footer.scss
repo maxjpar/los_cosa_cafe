@@ -1,13 +1,10 @@
 /* FOOTER-------------------------------------------------------------------*/
 
-
 .footer{
     display: flex;
     justify-content: end;
-    
     background-color:black;
     padding-top: 10px;
-    
 
     .img_footer{
         background-color: map-get($diseño, color-secundario);
@@ -15,9 +12,8 @@
     }
 
     .frase_footer{
-        color: map-get($diseño, color-secundario);  
+        color: map-get($diseño, color-secundario); 
+        font-size: 2.5vh; 
     }
     
 }
-
-
