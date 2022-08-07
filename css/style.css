@@ -23,15 +23,23 @@
   margin-top: 80px;
 }
 .bienvenido .bienvenido_titulo {
-  font-size: 40px;
-  font-family: monospace;
+  font-size: 6vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .bienvenido .bienvenido_parrafo {
   padding-top: 10px;
   font-family: monospace;
-  font-size: 18px;
+  font-size: 4vh;
 }
 
+@media screen and (max-width: 576px) {
+  .bienvenido .bienvenido_titulo {
+    font-size: 5vh;
+  }
+  .bienvenido .bienvenido_parrafo {
+    font-size: 3vh;
+  }
+}
 /* Reseteaaaar valores-------------------------------------------------------------------*/
 * {
   padding: 0;
@@ -48,41 +56,84 @@
   background-color: black;
 }
 
-/*@media screen and (max-width: 768px){
-    .body_nosotros, .body_productos, .body_formulario{
-    background-color: yellow;
-    }
-}*/
 .disclaimer {
   display: none;
 }
 
+#nav {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+#nav #nav a {
+  font-size: 15px;
+  padding: 15px;
+}
+
+*#nav a:hover {
+  border: 1px solid white;
+  transform: scale(0.9);
+  transition: all 1s;
+}
+
+#nav a.active {
+  border: 1px solid white;
+  transition: all 1s;
+}
+
+@media screen and (max-width: 991px) {
+  .body_productos #nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+  }
+  .body_productos #texto_nav {
+    text-align: center;
+  }
+  .body_productos #icon {
+    visibility: hidden;
+  }
+}
 /* Bloque de contacto-------------------------------------------------------------------*/
 .contactanos {
-  margin-top: 15%;
+  margin-top: 12%;
 }
 .contactanos #contactanos_titulo {
   text-align: center;
+  font-size: 4vh;
 }
-.contactanos .contactanos_datos {
-  display: grid;
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: repeat(2, 1fr);
-  justify-items: center;
-}
-.contactanos .contactanos_datos .contactanos_item {
+.contactanos .contactanos_item {
   display: grid;
   justify-items: center;
   margin: 7%;
-  transition: all 0.3s ease-out;
 }
-.contactanos .contactanos_datos .contactanos_item .contactanos_parrafo {
+.contactanos .contactanos_item .contactanos_parrafo {
   margin: 10px;
 }
-.contactanos .contactanos_datos .contactanos_item:hover {
-  transform: scale(1.3);
+.contactanos .contactanos_item:hover {
+  transform: scale(1.2);
+  transition: all 1s;
 }
 
+.contactanos_datos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+}
+
+@media screen and (max-width: 576px) {
+  .contactanos {
+    margin-top: 15%;
+  }
+  .contactanos #contactanos_titulo {
+    font-size: 4vh;
+  }
+  .contactanos_datos {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 /* Contenedor y nombre cafetería-------------------------------------------------------------------*/
 .menu_principal {
   display: grid;
@@ -116,14 +167,6 @@
   justify-content: center;
   background-color: white;
 }
-.formulario .formulario_texto {
-  position: absolute;
-  margin-top: 11%;
-  text-align: center;
-  font-family: verdana;
-  font-size: 15px;
-  font-weight: bold;
-}
 .formulario .formulario_ir {
   border: solid 1px black;
   color: black;
@@ -132,7 +175,15 @@
   position: absolute;
   margin-top: 22%;
   font-family: verdana;
-  font-size: 15px;
+  font-size: 1vw;
+}
+.formulario .formulario_texto {
+  position: absolute;
+  margin-top: 11%;
+  text-align: center;
+  font-family: verdana;
+  font-size: 1.2vw;
+  font-weight: bold;
 }
 .formulario .formulario_imagen {
   width: 50%;
@@ -141,7 +192,7 @@
 .formulario a:hover {
   font-size: 20px;
   font-weight: bold;
-  transform: scale(1.1);
+  transform: scale(0.9);
   transition: all 0.7s;
   background-color: black;
   color: white;
@@ -160,6 +211,7 @@
 }
 .footer .frase_footer {
   color: white;
+  font-size: 2.5vh;
 }
 
 .texto_f {
@@ -191,26 +243,41 @@
 }
 
 /* Menu navegable-------------------------------------------------------------------*/
-#nav {
+.menu_nav {
   display: flex;
   justify-content: end;
+  width: 100%;
 }
-#nav #nav a {
+.menu_nav #nav a {
   font-size: 15px;
   padding: 15px;
 }
 
-*#nav a:hover {
+*.menu_nav a:hover {
   border: 1px solid white;
   transform: scale(0.9);
   transition: all 1s;
 }
 
-#nav a.active {
+.menu_nav a.active {
   border: 1px solid white;
   transition: all 1s;
 }
 
+@media screen and (max-width: 991px) {
+  #nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+  }
+  #texto_nav {
+    text-align: center;
+  }
+  #icon {
+    visibility: hidden;
+  }
+}
 /* Boton a productos.html-------------------------------------------------------------------*/
 .miranos {
   display: flex;
@@ -227,10 +294,11 @@
   color: white;
   background-color: black;
   transition: all 0.7s;
+  font-size: 2.5vh;
 }
 
 .miranos a:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   color: black;
   background-color: white;
 }
@@ -306,6 +374,22 @@
   filter: saturate(200%);
 }
 
+@media screen and (max-width: 768px) {
+  .galeria_contenedor {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 12%;
+  }
+  .galeria_item:nth-child(4) {
+    grid-column-start: span 1;
+  }
+  .galeria_item:nth-child(5) {
+    grid-row-start: span 1;
+  }
+  .galeria_item:nth-child(9) {
+    grid-column-start: span 1;
+  }
+}
 /*Ubicación e iframe mapa-------------------------------------------------------------------*/
 .ubicacion {
   margin-top: 15%;
@@ -344,9 +428,33 @@
   justify-content: center;
   margin-bottom: 5%;
   margin-top: 15%;
-  font-size: 20px;
+  font-size: 4vh;
 }
 
+.virtudes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+}
+.virtudes .virtudes_item {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .virtudes {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+  }
+  .virtudes .virtudes_item {
+    margin: 3%;
+  }
+  .virtudes_titulo {
+    margin-top: 15%;
+  }
+}
 /*Visitanos-------------------------------------------------------------------*/
 .visitanos .visitanos_ver {
   margin-top: 12%;
@@ -372,6 +480,11 @@
   filter: saturate(200%);
 }
 
+@media screen and (max-width: 576px) {
+  .visitanos {
+    margin: 20%;
+  }
+}
 /* Sección productos-------------------------------------------------------------------*/
 .productos_total {
   display: grid;
@@ -380,14 +493,15 @@
   padding-bottom: 30px;
 }
 .productos_total .titulo_producto {
-  width: 170px;
+  width: 100%;
   padding: 10px 0px 10px 0px;
   display: flex;
   margin: auto;
   margin-bottom: 50px;
-  font-size: 25px;
+  font-size: 6vh;
   font-family: verdana;
   color: black;
+  justify-content: center;
 }
 .productos_total .titulo_producto .titulo_producto p {
   margin: auto;
@@ -409,7 +523,7 @@
 .productos_total .productos .izquierda .productos_postres .productos_texto {
   position: absolute;
   font-family: verdana;
-  font-size: 15px;
+  font-size: 2.5vh;
   color: white;
   background-color: black;
   text-align: center;
@@ -434,9 +548,11 @@
 .productos_total .productos .derecha .productos_capsulas .par {
   position: absolute;
   top: 0%;
+  font-size: 2.5vh;
 }
 .productos_total .productos .derecha .productos_capsulas .capsu {
   top: 95%;
+  font-size: 2.5vh;
 }
 .productos_total .productos .derecha .productos_capsulas .imagen_capsula {
   width: 100%;
@@ -446,7 +562,7 @@
   display: block;
   color: black;
   font-family: verdana;
-  font-size: 15px;
+  font-size: 2.5vh;
   color: white;
   background-color: black;
   width: 100%;
@@ -466,14 +582,24 @@
   object-fit: cover;
 }
 
+@media screen and (max-width: 576px) {
+  .productos_total .titulo_producto {
+    font-size: 6vh;
+  }
+  .productos_total .productos_texto {
+    font-size: 0.8vh;
+  }
+}
 /* Boton volver al inicio de la página-------------------------------------------------------------------*/
 .volver {
   display: flex;
+  margin-bottom: 2%;
 }
 .volver .volver_texto {
   padding-top: 10px;
   text-decoration: none;
   color: black;
+  font-size: 2.5vh;
 }
 
 .volver a:hover {

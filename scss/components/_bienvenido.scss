@@ -7,13 +7,26 @@
     margin-top: 80px;
 
     .bienvenido_titulo{
-        font-size: 40px;
-       font-family: monospace;
+        font-size: 6vh;
+       font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 
     .bienvenido_parrafo{
         padding-top: 10px;
         font-family: monospace;
-        font-size: 18px;
+        font-size:  4vh;
     }
+}
+
+@media screen and (max-width: 576px){
+
+    .bienvenido{
+    .bienvenido_titulo{
+        font-size:  5vh;
+    }
+
+    .bienvenido_parrafo{
+        font-size:  3vh;
+    }
+}
 }

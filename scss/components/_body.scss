@@ -18,12 +18,46 @@
     
 }
 
-/*@media screen and (max-width: 768px){
-    .body_nosotros, .body_productos, .body_formulario{
-    background-color: yellow;
-    }
-}*/
-
 .disclaimer{
 display: none;
 } 
+
+
+#nav{
+    @include vista(flex, end);
+    width: 100%;
+    
+    #nav a{
+        font-size: 15px;
+        padding: 15px;
+        }
+}
+
+*#nav a:hover{
+    border: 1px solid map-get($diseño, color-secundario);
+    transform: scale(0.9);
+    transition: all 1s ;
+}
+
+#nav a.active{
+    border: 1px solid map-get($diseño, color-secundario);
+    transition: all 1s ;
+}
+
+@media screen and (max-width: 991px){
+    .body_productos{
+    #nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap-reverse;
+    }
+
+    #texto_nav{
+        text-align: center;
+    }
+
+    #icon{
+        visibility: hidden
+    }
+}}

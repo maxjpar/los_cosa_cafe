@@ -36,12 +36,6 @@
 
 }
 
-
-
-
-
-
-
 .galeria_item:nth-child(4){
    grid-column-start: span 2;
 }
@@ -57,5 +51,24 @@
 
 .galeria img:hover{
     filter: saturate(200%);
+}
+
+@media screen and (max-width: 768px){
+    .galeria_contenedor{
+        display: $display-g;
+        grid-template-columns: repeat(1, 1fr) ;
+        margin: 12%;
+}
+.galeria_item:nth-child(4){
+    grid-column-start: span 1;
+ }
+ 
+ .galeria_item:nth-child(5){
+     grid-row-start: span 1;
+  }
+ 
+  .galeria_item:nth-child(9){
+     grid-column-start: span 1;
+  }
 }
 

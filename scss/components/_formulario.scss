@@ -7,16 +7,6 @@
     justify-content: center;
     background-color: map-get($diseño, color-secundario);
 
-    
-    .formulario_texto{
-        position:absolute;
-        margin-top: 11%;
-        text-align: map-get($diseño, texto-centrado);
-        font-family: $letra;
-        font-size: 15px;
-        font-weight: bold;
-    }
-
     .formulario_ir{
         border: solid 1px black;
         color: black;
@@ -25,7 +15,17 @@
         position:absolute;
         margin-top: 22%;
         font-family: $letra;
-        font-size: 15px;
+        font-size: 1vw;
+    }
+
+    .formulario_texto{
+        position:absolute;
+        margin-top: 11%;
+        text-align: map-get($diseño, texto-centrado);
+        font-family: $letra;
+        font-size: 1.2vw;
+        font-weight: bold;
+        
     }
 
     .formulario_imagen{
@@ -36,7 +36,7 @@
 .formulario  a:hover{
     font-size: 20px;
     font-weight: bold;
-    transform: scale(1.1);
+    transform: scale(0.9);
     transition: all 0.7s;
     background-color: black;
     color: map-get($diseño, color-secundario);

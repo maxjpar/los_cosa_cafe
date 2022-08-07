@@ -1,8 +1,39 @@
 /*Virtudes-------------------------------------------------------------------*/
-
 .virtudes_titulo{
-@include vista(flex, center);
-margin-bottom: 5%;
-margin-top: 15%;
-font-size: 20px;
+    @include vista(flex, center);
+    margin-bottom: 5%;
+    margin-top: 15%;
+    font-size: 4vh;
 }
+
+.virtudes{
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+justify-content: center;
+
+    .virtudes_item{ 
+        display: $display-g;
+            justify-items: center;
+            text-align: center
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .virtudes{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        
+        .virtudes_item{
+            margin: 3%;
+        }
+    }
+
+    .virtudes_titulo{
+        margin-top: 15%;
+    }
+    
+}
+
+

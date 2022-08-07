@@ -1,39 +1,50 @@
 /* Bloque de contacto-------------------------------------------------------------------*/
 
-
-
 .contactanos{
-    margin-top: 15%;
+    margin-top: 12%;
 
     #contactanos_titulo{
         text-align: map-get($diseño, texto-centrado);
+        font-size: 4vh;
     }
     
-    .contactanos_datos{
-        display: $display-g;
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-columns: repeat(2, 1fr);
-        justify-items: center;
+    .contactanos_item{
+    display: $display-g;
+    justify-items: center;
+    margin: 7%;
 
-        .contactanos_item{
-            display: $display-g;
-            justify-items: center;
-            margin: 7%;
-            transition: all 0.3s ease-out;
+        .contactanos_parrafo{
+            margin: 10px;
+        }
+    } 
 
-            .contactanos_parrafo{
-                margin: 10px;
-            }
-           
-        }
-        .contactanos_item:hover{
-            transform: scale(1.3);
-        }
+    .contactanos_item:hover{
+        transform: scale(1.2);
+        transition: all 1s;
+
     }
 }  
+.contactanos_datos{
+    display: grid;
+    grid-template-columns:  repeat(2, 1fr);
+    justify-items: center;
+} 
 
- 
 
+@media screen and (max-width: 576px){
+    .contactanos{
+        margin-top: 15%;
+
+        #contactanos_titulo{
+            
+            font-size: 4vh;
+        }
+    }
+    .contactanos_datos{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }   
+}
 
 
 
