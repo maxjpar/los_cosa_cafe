@@ -1,6 +1,8 @@
 /* NOSOTROS.HTML-------------------------------------------------------------------*/
 
 .nosotros{
+    display: flex;
+    flex-direction: column;
     .nosotros_texto{
         text-align: map-get($diseño, texto-centrado);
         background-color: black;
@@ -19,9 +21,9 @@
         padding-bottom: 150px;
     }
     
-    .nosotros img{
-        width: $ancho;
-        height: auto;
+    .nosotros_img{
+        
+        border: 2px solid white;
     }
     
 }

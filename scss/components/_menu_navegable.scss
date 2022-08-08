@@ -1,33 +1,13 @@
 /* Menu navegable-------------------------------------------------------------------*/
 
-.menu_nav{
-    @include vista(flex, end);
-    width: 100%;
-    
-    #nav a{
-        font-size: 15px;
-        padding: 15px;
-        }
-}
 
-*.menu_nav a:hover{
-    border: 1px solid map-get($diseño, color-secundario);
-    transform: scale(0.9);
-    transition: all 1s ;
-}
-
-.menu_nav a.active{
-    border: 1px solid map-get($diseño, color-secundario);
-    transition: all 1s ;
-}
-
-@media screen and (max-width: 991px){
+@media all and (max-width: 991px){
     #nav {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        flex-wrap: wrap-reverse;
     }
+
 
     #texto_nav{
         text-align: center;
