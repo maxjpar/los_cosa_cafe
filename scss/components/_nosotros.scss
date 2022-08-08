@@ -3,6 +3,7 @@
 .nosotros{
     display: flex;
     flex-direction: column;
+   
     .nosotros_texto{
         text-align: map-get($diseño, texto-centrado);
         background-color: black;
@@ -18,12 +19,12 @@
         font-size: 20px;
         color: map-get($diseño, color-secundario);
         text-align: map-get($diseño, texto-centrado);
-        padding-bottom: 150px;
+        padding-bottom: 5%;
     }
     
     .nosotros_img{
+        margin: 0 7% 2% 7%;
         
-        border: 2px solid white;
     }
     
 }
