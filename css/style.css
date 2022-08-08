@@ -56,7 +56,7 @@
   background-color: black;
 }
 
-.disclaimer {
+img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {
   display: none;
 }
 
@@ -243,33 +243,11 @@
 }
 
 /* Menu navegable-------------------------------------------------------------------*/
-.menu_nav {
-  display: flex;
-  justify-content: end;
-  width: 100%;
-}
-.menu_nav #nav a {
-  font-size: 15px;
-  padding: 15px;
-}
-
-*.menu_nav a:hover {
-  border: 1px solid white;
-  transform: scale(0.9);
-  transition: all 1s;
-}
-
-.menu_nav a.active {
-  border: 1px solid white;
-  transition: all 1s;
-}
-
-@media screen and (max-width: 991px) {
+@media all and (max-width: 991px) {
   #nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex-wrap: wrap-reverse;
   }
   #texto_nav {
     text-align: center;
@@ -304,6 +282,10 @@
 }
 
 /* NOSOTROS.HTML-------------------------------------------------------------------*/
+.nosotros {
+  display: flex;
+  flex-direction: column;
+}
 .nosotros .nosotros_texto {
   text-align: center;
   background-color: black;
@@ -320,9 +302,8 @@
   text-align: center;
   padding-bottom: 150px;
 }
-.nosotros .nosotros img {
-  width: 100%;
-  height: auto;
+.nosotros .nosotros_img {
+  border: 2px solid white;
 }
 
 /* PRODUCTOS.HTML-------------------------------------------------------------------*/
